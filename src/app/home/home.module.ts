@@ -19,6 +19,8 @@ import { LayoutComponent } from './components/layout/layout.component';
     CommonModule,
     HomeRoutingModule
   ],
-  exports: [HomeComponent]
+  exports: [
+    HomeComponent,
+  ]
 })
 export class HomeModule { }
