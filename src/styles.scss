@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@use './config.scss/variable.scss';
+@use './config.scss/reset.scss';
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: var(--branco);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
