@@ -1,0 +1,33 @@
+.container-layout{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--layout-color);
+    top: 80px;
+    z-index: 1;
+    .landscape-container{
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: var(--secundary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .titulo{
+            padding: 30px;
+            font-size: 70px;
+        }
+    }
+    .layout{
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+        display: flex;
+        text-align: center;
+        padding-top: 10px;
+        top: 0px;
+        z-index: 1;
+    }
+    
+}
