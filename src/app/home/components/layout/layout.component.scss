@@ -3,8 +3,40 @@
     width: 100%;
     height: 100%;
     background: var(--layout-color);
+    border-top: 2px solid var(--grayscale-color);
     top: 80px;
     z-index: 1;
+    .button-container{
+        height: 120px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background: var(--branco);
+        .button-cursos{
+            width: 250px;
+            height: 60px;
+            font-size: 20px;
+            margin-right: 40px;
+            border-radius: 10px;
+            color: var(--branco);
+            background: var(--primary-color);
+        }
+        .button-areas{
+            width: 150px;
+            height: 60px;
+            font-size: 20px;
+            margin-right: 40px;
+            border-radius: 10px;
+            color: rgb(54, 54, 54);
+            background: var(--grayscale-color);
+        }
+        a{
+            font-size: 22px; 
+        }
+    }
     .landscape-container{
         box-sizing: border-box;
         padding-left: 10px;
