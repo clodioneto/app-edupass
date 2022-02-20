@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    display: block;
     background: var(--layout-color);
     border-top: 2px solid var(--grayscale-color);
     top: 80px;
@@ -47,6 +48,7 @@
         align-items: flex-end;
         .titulo{
             padding: 30px;
+            padding-left: 100px;
             font-size: 70px;
             font-weight: bold;
         }

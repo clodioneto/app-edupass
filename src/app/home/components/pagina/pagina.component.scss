@@ -1,5 +1,3 @@
-//@use '../../../config.scss/variables.scss';
-
 .container-page{
     display: relative;
     margin: 0 auto;
@@ -36,6 +34,7 @@
                 padding:13px;
                 border-radius: 50px 50px 50px 50px;
                 height: 35px;
+                border-color: rgb(235, 235, 235);
             }
             .img-search{
                 width: 26px;

@@ -1,70 +1,74 @@
-<div class="card-container" *ngFor="let curso of detailCursos">
-    <label class="result-search">78 cursos de cursos gratuitos selecionados</label>
-    <mat-card class="card">
-        <img mat-card-image class="card-image" src="../../assets/img/eduplay.png">
-        <mat-card-title class="card-title">
-            Simple card
-        </mat-card-title>
-        <mat-card-content class="card-content">
-            <div class="desc-container">
-                <div class="descricao-valor">
-                    <label class="descricao-val" for="">Valor com Edupass</label>
-                    <label class="valor" for="">{{curso.valor}}</label>
-                    <label for="">(era R${{curso.valorOriginal}})</label>
+<section class="container">
+    <div class="card-container" >
+        <div class="result-search">
+            <label class="descricao-bol" for="">78 cursos de cursos gratuitos selecionados</label>
+        </div>
+        <div class="card" *ngFor="let curso of listaCursos">
+            <img class="card-image" src="../../assets/img/eduplay.png">
+            <h3 class="card-title">
+                {{curso.nomeCurso}}
+            </h3>
+            <div class="card-content">
+                <div class="desc-container">
+                    <div class="descricao-valor">
+                        <label class="descricao-val" for="">Valor com Edupass</label>
+                        <label class="valor" for="">{{curso.valor}}</label>
+                        <label for="">(era R${{curso.valorOriginal}})</label>
+                    </div>
+                    <div class="descricao-bolsa">
+                        <label class="descricao-bol" for="">Bolsa</label>
+                        <label class="percent" for="">{{curso.bolsa}}%</label>
+                        <label class="periodo" for="">{{curso.periodo}}</label>
+                    </div>
                 </div>
-                <div class="descricao-bolsa">
-                    <label class="descricao-bol" for="">Bolsa</label>
-                    <label class="percent" for="">{{curso.bolsa}}%</label>
-                    <label class="periodo" for="">{{curso.periodo}}</label>
+                <div class="categoria-container">
+                    <div class="categoria-row-1">
+                        <div>
+                            <mat-icon class="material-icons-outlined">
+                                play_lesson
+                            </mat-icon>
+                            <label class="cat-label" for="">{{curso.categoria_especifica}}</label>
+                        </div>
+                        <div>
+                            <mat-icon class="material-icons-outlined">
+                                devices
+                            </mat-icon>
+                            <label class="cat-label" for="">{{curso.modalidade}}</label>
+                        </div>
+                    </div>
+                    <div class="categoria-row-2">
+                        <div>
+                            <mat-icon class="material-icons-outlined">
+                                schedule
+                            </mat-icon>
+                            <label class="cat-label" for="">{{curso.turno}}</label>
+                        </div>
+                        <div>
+                            <mat-icon class="material-icons-outlined">
+                                assessment
+                            </mat-icon>
+                            <label class="cat-label" for="">{{curso.instituicao}}</label>
+                        </div>
+                    </div>
+                    <div class="categoria-row-3">
+                        <div>
+                            <mat-icon class="material-icons-outlined">
+                                calendar_month
+                            </mat-icon>
+                            <label class="cat-label" for="">{{curso.duracao}} {{curso.duracao_tipo}}</label>
+                        </div>
+                        <div>
+                            <mat-icon class="material-icons-outlined">
+                                fmd_good
+                            </mat-icon>
+                            <label class="cat-label" for="">{{curso.cidade}}</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="categoria-container">
-                <div class="categoria-row-1">
-                    <div>
-                        <mat-icon class="material-icons-outlined">
-                            play_lesson
-                        </mat-icon>
-                        <label class="cat-label" for="">{{curso.categoria_especifica}}</label>
-                    </div>
-                    <div>
-                        <mat-icon class="material-icons-outlined">
-                            devices
-                        </mat-icon>
-                        <label class="cat-label" for="">{{curso.modalidade}}</label>
-                    </div>
-                </div>
-                <div class="categoria-row-2">
-                    <div>
-                        <mat-icon class="material-icons-outlined">
-                            schedule
-                        </mat-icon>
-                        <label class="cat-label" for="">{{curso.turno}}</label>
-                    </div>
-                    <div>
-                        <mat-icon class="material-icons-outlined">
-                            assessment
-                        </mat-icon>
-                        <label class="cat-label" for="">{{curso.instituicao}}</label>
-                    </div>
-                </div>
-                <div class="categoria-row-3">
-                    <div>
-                        <mat-icon class="material-icons-outlined">
-                            calendar_month
-                        </mat-icon>
-                        <label class="cat-label" for="">{{curso.duracao}} {{curso.duracao_tipo}}</label>
-                    </div>
-                    <div>
-                        <mat-icon class="material-icons-outlined">
-                            fmd_good
-                        </mat-icon>
-                        <label class="cat-label" for="">{{curso.cidade}}</label>
-                    </div>
-                </div>
-            </div>
-        </mat-card-content>
-        <mat-card-actions class="card-button">
-            <button class="button-card" mat-flat-button color="primary">Saiba mais</button>
-        </mat-card-actions>
-    </mat-card> 
-</div>
+            <mat-card-actions class="card-button">
+                <button class="button-card" mat-flat-button color="primary">Saiba mais</button>
+            </mat-card-actions>
+        </div> 
+    </div>
+</section>

@@ -1,153 +1,178 @@
-.card-container{
-    position: relative;
-    padding: 50px;
-    margin-top: 70px;
-    .result-search{
-        position: relative;
-        font-size: 55px;
-        font-weight: bold;
-    }
-    
-    .card{
-        margin-top: 70px;
-        border-radius: 20px;
-        width: 400px;
-        height: 700px;
-        .card-image{
-            margin: 60px;
-            width: 200px;
-        }
-        .card-title{
-            font-size: 35px;
-            font-weight: bold;
-            margin-bottom: 60px;
-        }
-        .card-content{
-            width: 350px;
-            display: block;
-            margin: auto;
-            .desc-container{
-                border-top: 1px solid;
-                border-bottom: 1px solid;
-                padding-top: 20px;
-                padding-bottom: 20px;
+.container{
+        width: 100%;
+        display: flex;
+        .card-container{
+            
+            box-sizing: border-box;
+            width: 90%;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+
+            .result-search{
+                padding-top: 60px; ;
+                width: 100%;
+                height: 100px;
                 position: relative;
                 display: flex;
-                margin: auto;
-                margin-bottom: 30px;
-                justify-content:space-around;
-                .descricao-valor{
-                    position: relative;
-                    box-sizing: border-box;
-                    width: 100px;
-                    display: block;
-                    .descricao-val{
-                        position: relative;
-                        font-size: 20px;
-                        font-weight: bold;
-                        display: block;
-                        margin-bottom: 10px;
-                    }
-                    .valor{
-                        position: relative;
-                        font-size: 20px;
-                        font-weight: bold;
-                        color: var(--price-color);
-                        display: block;
-                        margin-bottom: 10px;
-                        
-                    }
-                }
-                .descricao-bolsa{
-                    position: relative;
-                    box-sizing: border-box;
-                    font-size: 20px;
-                    display: block;
-                    width: 100px;
-                    .descricao-bol{
-                        position: relative;
-                        font-size: 20px;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-    
-                    }
-                    .percent{
-                        position: relative;
-                        font-size: 20px;
-                        font-weight: bold;
-                        display: block;
-                        color:var(--price-color);
-                        margin-bottom: 10px;
-    
-                    }
-                    .periodo{
-                        position: relative;
-                        font-size: 16px;
-                        display: block;
-                        margin-bottom: 10px;
-    
-                    }
-
+                justify-content: start;
+                font-size: 55px;
+                font-weight: bold;
+                
             }
+        
+            .card{
+                border-radius: 20px;
+                margin: 10px;
+                margin-left: 30px;
+                width: 400px;
+                height: 700px;
+                background: var(--branco);
+                .card-image{
+                    margin: 60px;
+                    width: 200px;
+                }
+                .card-title{
+                    width: 70%;
+                    margin: 0 auto;
+                    font-size: 30px;
+                    font-weight: bold;
+                    margin-bottom: 60px;
+                }
+                .card-content{
+                    width: 350px;
+                    display: block;
+                    margin: auto;
+                    .desc-container{
+                        border-top: 1px solid;
+                        border-bottom: 1px solid;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        position: relative;
+                        display: flex;
+                        margin: auto;
+                        margin-bottom: 30px;
+                        justify-content:space-around;
+                        .descricao-valor{
+                            position: relative;
+                            box-sizing: border-box;
+                            width: 100px;
+                            display: block;
+                            .descricao-val{
+                                position: relative;
+                                font-size: 20px;
+                                font-weight: bold;
+                                display: block;
+                                margin-bottom: 10px;
+                            }
+                            .valor{
+                                position: relative;
+                                font-size: 20px;
+                                font-weight: bold;
+                                color: var(--price-color);
+                                display: block;
+                                margin-bottom: 10px;
+                                
+                            }
+                        }
+                        .descricao-bolsa{
+                            position: relative;
+                            box-sizing: border-box;
+                            font-size: 20px;
+                            display: block;
+                            width: 100px;
+                            .descricao-bol{
+                                position: relative;
+                                font-size: 20px;
+                                font-weight: bold;
+                                margin-bottom: 10px;
             
-            }
-            .categoria-container{
-                position: relative;
-                display: block;
-                .categoria-row-1{
-                    width: 100%;
-                    height: 50px;
-                    position: relative;
-                    display: flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    .cat-label{
-                        font-size:20px;
-                        margin:5px;
+                            }
+                            .percent{
+                                position: relative;
+                                font-size: 20px;
+                                font-weight: bold;
+                                display: block;
+                                color:var(--price-color);
+                                margin-bottom: 10px;
+            
+                            }
+                            .periodo{
+                                position: relative;
+                                font-size: 16px;
+                                display: block;
+                                margin-bottom: 10px;
+            
+                            }
+        
                     }
-
-                }
-                .categoria-row-2{
-                    width: 100%;
-                    height: 50px;
-                    position: relative;
-                    display: flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    .cat-label{
-                        font-size:20px;
-                        margin:5px;
+                    
                     }
-
-                }
-                .categoria-row-3{
-                    width: 100%;
-                    height: 50px;
-                    position: relative;
-                    display: flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    .cat-label{
-                        font-size:20px;
-                        margin:5px;
+                    .categoria-container{
+                        position: relative;
+                        display: block;
+                        .categoria-row-1{
+                            width: 100%;
+                            height: 50px;
+                            position: relative;
+                            display: flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            .cat-label{
+                                font-size:20px;
+                                margin:5px;
+                            }
+        
+                        }
+                        .categoria-row-2{
+                            width: 100%;
+                            height: 50px;
+                            position: relative;
+                            display: flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            .cat-label{
+                                font-size:20px;
+                                margin:5px;
+                            }
+        
+                        }
+                        .categoria-row-3{
+                            width: 100%;
+                            height: 50px;
+                            position: relative;
+                            display: flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            .cat-label{
+                                font-size:20px;
+                                margin:5px;
+                            }
+        
+                        }
+        
                     }
-
+        
                 }
-
-            }
-
-        }
-        .card-button{
-            position:relative;
-            margin-top: 50px;
-            .button-card{
-                width: 200px;
-                height: 50px;
-                font-size: 22px;
-                background: var(--primary-color);
-                border-radius: 15px;
+                .card-button{
+                    position:relative;
+                    margin-top: 50px;
+                    .button-card{
+                        width: 200px;
+                        height: 50px;
+                        font-size: 22px;
+                        background: var(--primary-color);
+                        border-radius: 15px;
+                    }
+                }
+                
             }
         }
         
-    }
+        
+    
+    
+
 }
+

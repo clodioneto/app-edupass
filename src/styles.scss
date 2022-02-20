@@ -40,13 +40,9 @@ $app-edupass-theme: mat.define-light-theme((
 html{
     font-family: 'Roboto', sans-serif;
 }
-main{
-    width: 100%;
-    height: 100%;
-    background: var(--branco);
-    margin: 0 auto;
-    box-sizing: border-box;
-}
 
-html, body { height: 100%; }
+
+html, body { 
+  height: 100%; 
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -28,29 +28,25 @@ interface Icurso{
 
 
 export class CardComponent implements OnInit {
-  
 
-  listaCursos: CursoType[] = [];
 
-  detailCursos: Icurso[] = [];
+  listaCursos: Icurso[] = [];
 
   constructor(private apiService: ApiServiceService) {
    }
 
   ngOnInit(): void {
     this.apiService.listAllCursos.subscribe(data => {
-      this.detailCursos = this.getDetailCursos(data);
-      console.log(this.detailCursos);
+      this.listaCursos = this.getDetailCursos(data);
     }
       );
     
   }
 
+  //Mapeamento das propriedades
   getDetailCursos(listaCursos: CursoType[]){
     const listasCursos: Icurso[] = [];
-    let lCursos = listaCursos.map(curso => curso)
-    console.log(lCursos);
-    
+    let lCursos = listaCursos
     lCursos.forEach(curso => {
       const lc: Icurso = {
         nomeCurso: '',
@@ -78,7 +74,6 @@ export class CardComponent implements OnInit {
         listasCursos.push(lc);
     });
     
-    console.log(listasCursos)
     return listasCursos;
 
 }
