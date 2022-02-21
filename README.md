@@ -8,7 +8,7 @@ Bibliotecas utilizadas:
 
 Start app:
 
->> json-server --watch db.json
->> ng serve --o
+json-server --watch db.json
+ng serve --o
 
 
