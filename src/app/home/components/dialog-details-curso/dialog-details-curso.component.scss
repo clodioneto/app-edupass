@@ -1,0 +1,140 @@
+.container{
+    width: 100%;
+    .card-container{
+        width: 350px;
+        position: relative;
+        margin: 0 auto;
+        .card{
+            width: 350px;
+            height: 650px;
+            display: block;
+            background: var(--branco);
+            margin: auto;
+            .card-image{
+                margin: 30px auto;
+                padding: 40px;
+                width: 200px;
+                display: flex;
+            }
+            .card-title{
+                width: 100%;
+                margin: 0 auto;
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 60px;
+                text-align: center;
+                flex-wrap: wrap;
+                
+            }
+            .card-content{
+                position: relative;
+                margin: 0 auto;
+                width: 100%;
+                display: block;
+                align-items: center;
+                .desc-container{
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    position: relative;
+                    display: flex;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                    justify-content:space-around;
+                    .descricao-valor{
+                        position: relative;
+                        box-sizing: border-box;
+                        width: 100px;
+                        display: block;
+                        text-align: center;
+                        .descricao-val{
+                            position: relative;
+                            font-size: 20px;
+                            font-weight: bold;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        .valor{
+                            position: relative;
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: var(--price-color);
+                            display: block;
+                            margin-bottom: 10px;
+                            
+                        }
+                    }
+                    .descricao-bolsa{
+                        position: relative;
+                        box-sizing: border-box;
+                        font-size: 20px;
+                        display: block;
+                        width: 100px;
+                        text-align: center;
+                        .descricao-bol{
+                            position: relative;
+                            font-size: 20px;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+        
+                        }
+                        .percent{
+                            position: relative;
+                            font-size: 20px;
+                            font-weight: bold;
+                            display: block;
+                            color:var(--price-color);
+                            margin-bottom: 10px;
+        
+                        }
+                        .periodo{
+                            position: relative;
+                            font-size: 16px;
+                            display: block;
+                            margin-bottom: 10px;
+        
+                        }
+    
+                    }
+                
+                }
+                .categoria-container{
+                    width: 90%;
+                    position: relative;
+                    display: flex;
+                    margin-bottom:50px;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    .categoria-col-1{
+                        position: relative;
+                        display: block;
+                        .cat-label{
+                            font-size:20px;
+                            margin:5px;
+                        }
+    
+                    }
+                    .categoria-col-2{
+                        position: relative;
+                        display: block;
+                        .cat-label{
+                            font-size:20px;
+                            margin:5px;
+                        }
+    
+                    }
+    
+                }
+    
+            }
+            
+        }
+    }
+    
+    
+
+
+
+}
+

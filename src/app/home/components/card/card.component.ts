@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { CursoType } from 'src/app/shared/types/curso.type';
 import { ApiServiceService } from '../../services/api-service.service';
+import { DialogDetailsCursoComponent } from '../dialog-details-curso/dialog-details-curso.component';
 
 interface Icurso{
     
@@ -32,10 +34,13 @@ export class CardComponent implements OnInit {
 
   listaCursos: Icurso[] = [];
 
-  constructor(private apiService: ApiServiceService) {
+  constructor(private apiService: ApiServiceService, private dialog: MatDialog) {
    }
 
   ngOnInit(): void {
+
+    //Recebimento dos dados a partir do serviço
+    //Recebimento do resultado do método e atribuição a variável
     this.apiService.listAllCursos.subscribe(data => {
       this.listaCursos = this.getDetailCursos(data);
     }
@@ -43,7 +48,7 @@ export class CardComponent implements OnInit {
     
   }
 
-  //Mapeamento das propriedades
+  //Método de mapeamento das propriedades
   getDetailCursos(listaCursos: CursoType[]){
     const listasCursos: Icurso[] = [];
     let lCursos = listaCursos
@@ -76,5 +81,30 @@ export class CardComponent implements OnInit {
     
     return listasCursos;
 
-}
+  }
+
+  //Método de chamada da caixa de diálogo e configurações
+  openDialog(curso: Icurso): void {
+      this.dialog.open(DialogDetailsCursoComponent, {
+      width: '450px',
+      height: 'auto',
+      //Envio dos dados para o componente filho
+      data: { 
+        nomeCurso: curso.nomeCurso,
+        valor: 0,
+        bolsa: 100,
+        periodo: 'Até o fim do curso',
+        valorOriginal: curso.valorOriginal,
+        modalidade: curso.modalidade,
+        categoria_especifica: curso.categoria_especifica,
+        duracao: curso.duracao,
+        duracao_tipo: curso.duracao_tipo,
+        instituicao: curso.instituicao,
+        cidade: curso.cidade,
+        turno: curso.turno
+      }
+    });
+    
+  }
+
 }

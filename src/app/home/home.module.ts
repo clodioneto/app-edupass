@@ -11,6 +11,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogDetailsCursoComponent } from './components/dialog-details-curso/dialog-details-curso.component';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
     CardComponent,
     PaginaComponent,
     LayoutComponent,
+    DialogDetailsCursoComponent,
     
   ],
   imports: [
@@ -28,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatFormFieldModule,
     MatButtonModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule,
   ],
   exports: [
     HomeComponent,
