@@ -1,19 +1,19 @@
 <div class="container-layout">
     <div class="button-container">
-        <button mat-flat-button class="button-cursos">Cursos Gratuitos
+        <button mat-flat-button class="button-cursos">{{ 'LAYOUT.buttonFreeCourses' | translate}}
             <img class="img-search" src="../../assets/img/outline_code_black_24dp.png" alt="Lupa de pesquisa">
         </button>
-        <button mat-flat-button class="button-areas">Áreas
+        <button mat-flat-button class="button-areas">{{ 'LAYOUT.occupation' | translate}}
             <img class="img-search" src="../../assets/img/outline_code_black_24dp.png" alt="Lupa de pesquisa">
         </button>
-        <a href="">Remover Filtro</a>
+        <a href="">{{ 'LAYOUT.filter' | translate}}</a>
     </div>
     <div class="landscape-container">
-        <label class="titulo">Cursos Gratuitos</label>
+        <label class="titulo">{{ 'LAYOUT.title' | translate}}</label>
         <img class="img-landscape" src="../../assets/img/perfil.png" alt="Imagem do landscape">
     </div>
     <label class="layout">
         <app-card></app-card>
     </label>
-    
+
 </div>

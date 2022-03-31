@@ -13,6 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DialogDetailsCursoComponent } from './components/dialog-details-curso/dialog-details-curso.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { DialogDetailsCursoComponent } from './components/dialog-details-curso/d
     PaginaComponent,
     LayoutComponent,
     DialogDetailsCursoComponent,
-    
+
   ],
   imports: [
     CommonModule,
@@ -33,6 +34,7 @@ import { DialogDetailsCursoComponent } from './components/dialog-details-curso/d
     MatCardModule,
     MatIconModule,
     MatDialogModule,
+    TranslateModule,
   ],
   exports: [
     HomeComponent,

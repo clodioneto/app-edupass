@@ -2,30 +2,36 @@
     <div class="top-bar">
         <img class="img-logo" src="../../assets/img/logo.png" alt="Logo da edupass">
         <div class="search">
-                <input class="input-search" type="search" placeholder="Pesquisar" autocomplete="off">
+                <input class="input-search" type="search" placeholder="{{ 'PAGE.search' | translate }}" autocomplete="off">
                 <img class="img-search" src="../../assets/img/outline_search_black_24dp1.png" alt="Lupa de pesquisa">
         </div>
+        <div>
+            <button mat-flat-button class="button-idioma" (click)="switchLanguage('en')">en
+            </button>
+            <button mat-flat-button class="button-idioma" (click)="switchLanguage('pt')">pt
+            </button>
+        </div>
         <div class="login">
-            <label class="login-label">Inicio</label>
-            <label class="login-label">Olá,</label>
+            <label class="login-label">{{ 'PAGE.pageName' | translate }}</label>
+            <label class="login-label">{{ 'PAGE.salutation' | translate }}</label>
             <label class="login-nome">Matheus</label>
             <img class="img-search" src="../../assets/img/outline_code_black_24dp.png" alt="Lupa de pesquisa">
         </div>
     </div>
-    
-    <app-layout></app-layout>
+
+    <app-layout [language]="language"></app-layout>
     <div class="bottom-bar">
         <div class="bottom-bar-row1">
-            <label class="bottom-bar-label">Termos de Uso</label>
-            <label class="bottom-bar-label">© Edupass 2021 | Todos os direitos reservados.</label>
-            <label class="bottom-bar-ajuda">Precisa de ajuda?</label>
+            <label class="bottom-bar-label">{{ 'PAGE.terms' | translate }}</label>
+            <label class="bottom-bar-label">{{ 'PAGE.rights' | translate }}</label>
+            <label class="bottom-bar-ajuda">{{ 'PAGE.help' | translate }}</label>
         </div>
         <div class="bottom-bar-row2">
-            <label class="bottom-bar-label">Política de Privacidade</label>
-            <label class="bottom-bar-version">Versão 1.3.5</label>
+            <label class="bottom-bar-label">{{ 'PAGE.policy' | translate }}</label>
+            <label class="bottom-bar-version">{{ 'PAGE.version' | translate }}</label>
             <div class="whatsapp">
                 <img class="whatsapp-icon" src="../../assets/img/whatsapp-icon.png" alt="">
-                <label class="bottom-bar-label">Chama no Wathsapp</label>
+                <label class="bottom-bar-label">{{ 'PAGE.call' | translate }}</label>
             </div>
         </div>
     </div>

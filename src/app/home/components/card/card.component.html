@@ -1,7 +1,7 @@
 <section class="container">
     <div class="card-container" >
         <div class="result-search">
-            <label class="descricao-bol" for="">78 cursos de cursos gratuitos selecionados</label>
+            <label class="descricao-bol" for="">{{ 'CARD.description' | translate }}</label>
         </div>
         <div class="card" *ngFor="let curso of listaCursos">
             <img class="card-image" src="../../assets/img/eduplay.png">
@@ -11,12 +11,12 @@
             <div class="card-content">
                 <div class="desc-container">
                     <div class="descricao-valor">
-                        <label class="descricao-val" for="">Valor com Edupass</label>
+                        <label class="descricao-val" for="">{{ 'CARD.value' | translate }}</label>
                         <label class="valor" for="">{{curso.valor}}</label>
                         <label for="">(era R${{curso.valorOriginal}})</label>
                     </div>
                     <div class="descricao-bolsa">
-                        <label class="descricao-bol" for="">Bolsa</label>
+                        <label class="descricao-bol" for="">{{ 'CARD.scholarship' | translate }}</label>
                         <label class="percent" for="">{{curso.bolsa}}%</label>
                         <label class="periodo" for="">{{curso.periodo}}</label>
                     </div>
@@ -67,6 +67,6 @@
             <mat-card-actions class="card-button">
                 <button class="button-card" mat-raised-button (click)="openDialog(curso)" mat-flat-button color="primary">Saiba mais</button>
             </mat-card-actions>
-        </div> 
+        </div>
     </div>
 </section>
